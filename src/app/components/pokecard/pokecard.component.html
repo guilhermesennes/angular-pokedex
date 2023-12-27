@@ -1,0 +1,9 @@
+<a [routerLink]="['/pokemon', pokemon.id]" class="pokecard">
+  <span class="pokecard--id">#{{pokemon.id}}</span>
+  <img
+    [src]="pokemon.sprites.other['official-artwork'].front_default"
+    alt=""
+    class="pokecard--image"
+  />
+  <p class="pokecard--name">{{pokemon.name}}</p>
+</a>
